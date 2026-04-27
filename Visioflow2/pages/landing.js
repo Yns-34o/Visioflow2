@@ -1,5 +1,5 @@
-import { CinematicHero } from "@/components/ui/cinematic-hero";
 import Head from "next/head";
+import { CinematicHero } from "@/components/ui/cinematic-hero";
 
 export default function LandingPage() {
   return (

@@ -22,6 +22,31 @@ html{background:var(--bg);font-family:'Inter',-apple-system,BlinkMacSystemFont,s
 body{background:var(--bg);color:var(--text);min-height:100vh}
 ::-webkit-scrollbar{width:0}
 @keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+/* ── PAGE REVEAL (liaison intro → page) ──────────────────────────────── */
+@keyframes vf-page-reveal {
+  from { opacity:0; transform:translateY(22px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.vf-page-reveal {
+  animation: vf-page-reveal 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── SCROLL ANIMATIONS ───────────────────────────────────────────────── */
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+              transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+[data-scroll].vf-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+[data-scroll][data-sd="1"] { transition-delay: 0.08s; }
+[data-scroll][data-sd="2"] { transition-delay: 0.16s; }
+[data-scroll][data-sd="3"] { transition-delay: 0.24s; }
+[data-scroll][data-sd="4"] { transition-delay: 0.32s; }
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -269,6 +294,14 @@ body{background:var(--bg);color:var(--text);min-height:100vh}
 .pbtn-builder:hover{background:var(--bg-alt);border-color:var(--blue)}
 .pbtn-builder.pr{background:var(--blue);border:none;color:#fff;box-shadow:0 4px 16px rgba(0,113,227,.3)}
 .pbtn-builder.pr:hover{background:var(--blue-h)}
+.pcard-demo{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;
+  padding:9px 14px;border-radius:10px;border:.5px dashed var(--bord-md);background:0;
+  color:var(--text3);font-size:12px;font-weight:500;text-decoration:none;cursor:pointer;
+  transition:all .2s;font-family:inherit;width:100%;box-sizing:border-box}
+.pcard-demo:hover{color:var(--blue);border-color:var(--blue);background:rgba(0,113,227,.04)}
+.pcard-demo svg{flex-shrink:0;opacity:.6}
+.pcard-demo:hover svg{opacity:1}
+.pcard-demo.empty{opacity:.45;pointer-events:none}
 .offres-notice{text-align:center;margin:28px auto 0;padding:16px 24px;
   background:#eff6ff;border:.5px solid #bfdbfe;border-radius:14px;max-width:700px}
 .offres-notice p{font-size:13px;color:#1e40af;line-height:1.65}

@@ -611,7 +611,7 @@ export default function Vitrine() {
                 <p className="about-story">{CONFIG.story}</p>
                 <div className="about-stats">
                   <div>
-                    <div className="about-stat-num">48h</div>
+                    <div className="about-stat-num">5j</div>
                     <div className="about-stat-lbl">Délai de livraison</div>
                   </div>
                   <div>
