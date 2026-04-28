@@ -18,7 +18,14 @@
       "Bash(node fix_footer.js)",
       "Bash(curl -s -o /tmp/resp.html -w \"%{http_code}\" http://localhost:3000)",
       "Bash(curl -s -o /tmp/resp2.html -w \"%{http_code}\" http://localhost:3000)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(awk '/form-step-1/,/form-step-success/ {found=1} found {print NR\": \"$0}' \"C:\\\\Users\\\\clayt\\\\OneDrive\\\\Desktop\\\\Visioflow-Projet\\\\Visioflow2\\\\pages\\\\index.js\")",
+      "Bash(awk *)",
+      "Bash(node franchise_replace.js)",
+      "Bash(node dashboard_updates.js)",
+      "Bash(node config_tab.js)",
+      "Bash(npm run *)",
+      "Bash(findstr /I \"Error Unterminated ident compiled\")"
     ]
   }
 }

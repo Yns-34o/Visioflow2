@@ -687,6 +687,114 @@ textarea.form-input{min-height:80px;resize:vertical}
 .form-pack-btn-name{font-family:'Outfit';font-size:13px;font-weight:700;color:var(--text)}
 .form-pack-btn-price{font-family:'Outfit';font-size:11px;font-weight:800;color:var(--blue)}
 
+/* ── MOBILE RESPONSIVE ───────────────────────────────────────────────── */
+
+/* Nav mobile */
+@media(max-width:640px){
+  .nav{gap:10px;padding:0 12px;justify-content:space-between;overflow-x:auto;scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  .nav-logo{font-size:15px;flex-shrink:0}
+  .nl{font-size:11px;white-space:nowrap;flex-shrink:0}
+  .nav-cta{font-size:11px;padding:5px 12px;white-space:nowrap;flex-shrink:0}
+}
+@media(max-width:400px){
+  .nl{font-size:10px;padding:0 2px}
+  .nav-cta{font-size:10px;padding:4px 10px}
+}
+
+/* Hero mobile */
+@media(max-width:640px){
+  .hero{padding:90px 18px 60px;min-height:auto}
+  .hero h1{letter-spacing:-2px;line-height:1.05}
+  .hero-stats{gap:24px;margin-top:48px}
+  .hsv{font-size:30px;letter-spacing:-1px}
+  .hero-actions{gap:10px}
+  .hero-actions .ba,.hero-actions .bg{padding:11px 20px;font-size:14px}
+  .trust-row{gap:7px;padding:0 12px 60px}
+  .tbadge{font-size:11px;padding:6px 12px}
+}
+
+/* Teaser section mobile */
+@media(max-width:640px){
+  .teaser-sec{padding:0 16px 70px}
+  .band{padding:60px 18px}
+  .band h2{letter-spacing:-1.5px}
+}
+
+/* Builder mobile */
+@media(max-width:640px){
+  .builder-wrap{padding:60px 16px 80px}
+  .bctl{padding:16px;gap:14px;position:static}
+  .iphone{width:260px;height:536px;border-radius:38px}
+  .mac{max-width:100%}
+  .mac-c{height:340px}
+  .dtog{flex-wrap:wrap;gap:4px}
+}
+
+/* Offres page mobile */
+@media(max-width:640px){
+  .offres-wrap{padding:60px 16px 40px}
+  .pgrid{max-width:100%}
+  .pcard{padding:24px 20px}
+  .pcard-p{font-size:40px}
+  .faq-sec{padding:36px 16px 50px}
+  .offres-cta{padding:60px 16px}
+  .offres-notice{margin:20px 0 0;padding:14px 16px}
+}
+
+/* Avantages mobile */
+@media(max-width:640px){
+  .av-wrap{padding:60px 16px 60px}
+  .psteps{grid-template-columns:1fr 1fr}
+  .sgrid{grid-template-columns:1fr 1fr}
+  .sc{padding:24px 14px}
+  .sv{font-size:32px}
+  .av-cta{padding:60px 16px}
+}
+
+/* Paiements mobile */
+@media(max-width:640px){
+  .pp-showcase{padding:50px 14px 60px}
+  .pp-wrap{padding:0 16px 50px}
+  .pay-cta{padding:50px 16px}
+  .sec-dark{padding:50px 16px}
+}
+
+/* Form mobile */
+@media(max-width:640px){
+  .form-wrap{padding:60px 16px 50px}
+  .form-section{padding:20px 16px}
+  .form-nav-btns{flex-direction:column;gap:10px}
+  .form-btn-next,.form-btn-prev{width:100%;text-align:center}
+  .form-pack-sel{flex-direction:column}
+}
+
+/* VF Admin mobile */
+@media(max-width:640px){
+  .vf-admin{padding:60px 16px 40px}
+  .vf-stat-row{grid-template-columns:1fr 1fr}
+  .vf-scard-value{font-size:24px}
+  .vf-tabs{gap:3px}
+  .vf-tab{padding:7px 12px;font-size:12px}
+  .vf-table th,.vf-table td{padding:8px 6px;font-size:12px}
+}
+
+/* Modal mobile */
+@media(max-width:480px){
+  .pay-overlay{padding:12px}
+  .pay-modal{border-radius:18px}
+  .pay-title{font-size:22px}
+  .rp-modal,.pay-modal{max-width:100%}
+  .pm-grid3{grid-template-columns:1fr 1fr 1fr;gap:5px}
+}
+
+/* Typography mobile */
+@media(max-width:480px){
+  .stl{letter-spacing:-1.5px}
+  .sh{margin-bottom:36px}
+  .sd{font-size:15px}
+}
+
 /* ── GLOW CARD ─────────────────────────────────────── */
 .fc[data-glow],.tc[data-glow]{--gx:-999px;--gy:-999px;--ghue:220;position:relative!important;background-color:var(--bg-card)!important;background-image:radial-gradient(280px 280px at var(--gx) var(--gy),hsl(var(--ghue) 100% 70%/.10),transparent)!important}
 .fc[data-glow]::before,.tc[data-glow]::before{content:"";position:absolute;inset:-.5px;border-radius:18px;padding:.5px;background:radial-gradient(200px 200px at var(--gx) var(--gy),hsl(var(--ghue) 100% 60%),transparent 100%);-webkit-mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);-webkit-mask-composite:destination-out;mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);mask-composite:exclude;pointer-events:none;filter:brightness(2)}
