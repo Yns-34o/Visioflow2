@@ -1,0 +1,19 @@
+import Head from "next/head";
+import { CinematicHero } from "@/components/ui/cinematic-hero";
+
+export default function LandingPage() {
+  return (
+    <>
+      <Head>
+        <title>Visioflow — Votre site restaurant en 48h</title>
+        <meta
+          name="description"
+          content="Visioflow crée votre site de restaurant professionnel avec commande en ligne en seulement 48 heures."
+        />
+      </Head>
+      <div className="overflow-x-hidden w-full min-h-screen">
+        <CinematicHero />
+      </div>
+    </>
+  );
+}
